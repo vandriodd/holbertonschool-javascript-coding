@@ -11,7 +11,7 @@ request(url, (error, response, body) => {
   const data = JSON.parse(body).results;
   let count = 0;
 
-  data.filter((movie) => {
+  data.forEach((movie) => {
     if (movie.characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
       count++;
     }
