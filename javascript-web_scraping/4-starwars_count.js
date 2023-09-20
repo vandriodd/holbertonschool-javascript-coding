@@ -12,8 +12,9 @@ request(url, (error, response, body) => {
   let count = 0;
 
   data.filter((movie) => {
-    if (movie.characters.includes(`https://swapi-api.hbtn.io/api/people/18/`))
+    if (movie.characters.includes(`https://swapi-api.hbtn.io/api/people/18/`)) {
       count++;
+    }
   });
   console.log(count);
 });
